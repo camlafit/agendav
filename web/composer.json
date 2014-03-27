@@ -1,7 +1,8 @@
 {
     "require": {
         "pimple/pimple": "1.0.0",
-        "monolog/monolog": "1.*"
+        "monolog/monolog": "1.*",
+        "guzzlehttp/guzzle": "4.0.*@RC"
     },
     "autoload": {
         "psr-0": {
