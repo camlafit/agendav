@@ -13,6 +13,7 @@ AgenDAV |release| requires the following software to be installed:
 * PHP >= 5.3.0
 * PHP mbstring extension
 * PHP cURL extension
+* PHP Composer
 * MySQL > 5.1 or PostgreSQL >= 8.1
 
 Downloading AgenDAV and uncompressing
@@ -27,11 +28,11 @@ Uncompress it using ``tar``::
  $ tar xzf adobo-agendav-...tar.gz
  $ cd adobo-agendav-.../
 
-Download dependencies (only for Git)
+Download dependencies
 ------------------------------------
 
-If you downloaded AgenDAV from GitHub using ``git``, you will need to download
-`Composer <http://getcomposer.org>`_ and use it to fetch AgenDAV dependencies.
+With last version, Agendav use dependencies provided with `Composer <http://getcomposer.org>`_
+You will need to download `Composer <http://getcomposer.org>`_ and use it to fetch all AgenDAV dependencies.
 
 Composer is a PHP package manager, and some libraries used by AgenDAV are
 downloaded using it.
@@ -39,7 +40,7 @@ downloaded using it.
 Composer installation is really simple::
 
  $ cd web/
- $ curl -s https://getcomposer.org/installer | php
+ $ php -r "readfile('https://getcomposer.org/installer');" | php
  $ php composer.phar install
 
 Database and tables
